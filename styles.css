@@ -18,6 +18,7 @@
 
 /* Main Style */
 body {
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -31,6 +32,7 @@ body {
 
 #container {
     width: 25%;
+    min-width: 350px;
     height: 350px;
     background-color: white;
     display: flex;
@@ -98,4 +100,15 @@ h3 {
     font-size: .7rem;
     letter-spacing: .1rem;
     color: var(--pr-dark-grayish-blue);
+}
+
+@media screen and (max-width: 375px) {
+
+    body {
+        background-position: 130% 150%, -25% -60%;
+    }
+
+    #container {
+        width: 90%;
+    }
 }
