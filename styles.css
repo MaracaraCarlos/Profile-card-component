@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --pr-dark-cyan: hsl(185, 75%, 39%);
+    --pr-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --pr-dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --neutral-dark-gray: hsl(0, 0%, 59%);
+}
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+/* Main Style */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pr-dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -78% 180%, 170% -90%;
+}
+
+#container {
+    width: 25%;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#image__card {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+#card__pattern {
+    flex: 1;
+}
+
+#name__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+#image_profile {
+    border-radius: 100vmax;
+    border: solid white;
+    position: absolute;
+    top: 0;
+    transform: translateY(-55%);
+}
+
+#name__container h3{
+    margin-top: 35px;
+    padding-block: 6px;
+}
+
+span {
+    font-weight: 400;
+    color: var(--pr-dark-grayish-blue);
+}
+
+#name__container p{
+    font-size: .9rem;
+    color: var(--pr-dark-grayish-blue);
+}
+
+#stats {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: .6;
+    text-align: center;
+    border-top: 2px solid rgba(128, 128, 128, 0.205);
+}
+
+h3 {
+    color: var(--pr-very-dark-desaturated-blue);
+}
+
+.stat p{
+    font-size: .7rem;
+    letter-spacing: .1rem;
+    color: var(--pr-dark-grayish-blue);
+}
